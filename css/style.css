@@ -1,148 +1,132 @@
-
-/* resposividade: */
-
-/* @media(max-width: 768px){
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-} */
-
-/* body */
-
 body{
-    background-color:azure;
+    background-color:#f8fafc;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    color: #1e293b;
+}
+
+.body-main, .header, .main, .contact-links, .line{
+    max-width: 1200px;
+}
+
+.header, .menu, .gig, .img-profile img, .main, .contact-links, .line{
+    width: 100%;
+}
+
+body, .body-main, .header, .menu, .menu .list,.main, .gig, .contact-links{
     display: flex;
+}
+
+.body-main, .header, .main, .gig, .contact-links{
+    align-items: center;
+}
+
+body, .menu, .contact-links{
     justify-content: center;
-    /* align-items: center; */
-    font-family: 'Courier New', Courier, monospace;
 }
 
+/* Geral */
 
-/* main of body */
-
-#body-main{
-    display: flex;
-    align-items: center;
+.body-main{
     flex-direction: column;
-    background-color: aliceblue;
-    width: 80%;
-    border-radius: 20px
-    /* border-radius: 25px; */
+    background-color: #ffffff;
+    width: 90%;
+    box-shadow: 1px 1px 5px grey;
+    box-sizing: border-box;
+    border-radius: 20px;
 }
 
-#header{
-    background-color: aqua;
-    width: 80%;
-    display: flex;
-    align-items: center;
-}
+/* Header */
 
-#header .title{
+.header .title{
     text-align: center;
-    margin-left: 8%;
-    background-color: aliceblue;
+    padding: 0 55px;
+    /* background-color: aliceblue; */
 }
 
-#menu{
-    display: flex;
-    margin-right: 2%;
-    background-color: aliceblue;
-    /* width: 50%; */
+/* menu */
+
+.menu{
+    /* background-color: aliceblue; */
     margin-left: auto;
 }
 
-#menu #list{
-    display: flex;
+.menu .list{
     flex-direction: row;
     gap: 40px;
 }
 
-#list .item{
+.list .item{
     list-style: none;
+    font-size: 20px;
 }
 
 .item .link{
-    color: black;   
+    color: cornflowerblue;
     text-decoration: none;
     font-weight: bolder;
 }
 
+.link{
+    transition: 0.2s;
+}
+
 .item .link:hover{
+    color: #1d4ed8;
     text-decoration: underline;
+    text-underline-offset: 10px;    /*distância do link*/
+    text-decoration-thickness: 3px;     /*espeçura do underline*/
 }
 
 .line{
-    height: 2px;
-    background-color: rgb(0 0 0);
-    opacity: 80%;
-    border: none;
+    opacity: 30%;
 }
 
 /* principal */
 
-#main{
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 600px;
+.main{
+    flex-direction: column;
+    padding: 0 55px;
+    box-sizing: border-box;  /*usa toda a largura do container pai*/
+}
+
+.gig{
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 .hello{
     text-align: start;
-    width: 35%;
-    min-width: 350px;
-    background-color: aliceblue;
-    font-size: 50px;
+    width: 100%;
+    max-width: 450px;
+    /* background-color: aliceblue; */
+    font-size: 60px;
 }
 
 .img-profile{
-    display: flex;
-    align-items: center;
-    width: 55%;
     background-color: cornflowerblue;
+    max-width: 400px;
+    aspect-ratio: 1;       /*Mantem proporção regular de escala 1:1 altura:largura*/
+
+}
+
+.img-profile, .img-profile img{
+    display: block;     /* retirar borda abaixo da imagem*/
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
 }
 
 
-.img-profile img{
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-}
+/* Rodapé */
+
 
 .contact-links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 150px;
     text-align: center;
     background-color: aliceblue;
-    border-radius: 20px
 }
 
-.contact-links{
-    /* background-color: blueviolet; */
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/* 
-#footer-links{
-    justify-content: space-between;
-} */
-
-.contact-links a{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-
-.contact-links img{
+.contact-links a, .contact-links img{
     height: 50px;
     width: 50px;
     border-radius: 50%;
