@@ -1,0 +1,15 @@
+portfolio/
+│
+├── index.html
+│
+├── css/
+│   └── style.css
+│
+├── images/
+│   ├── perfil.jpg
+│   └── projetos/
+│
+├── docs/
+│   └── curriculo.pdf
+│
+└── README.md
