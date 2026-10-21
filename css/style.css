@@ -6,15 +6,14 @@ body{
     color: #1e293b;
 }
 
-.body-main, .header, .main, .contact-links, .line{
+.body-main, .main, .contact-links, .line{
     max-width: 1200px;
 }
-
-.header, .menu, .gig, .img-profile img, .main, .contact-links, .line{
+ .header, .gig, .img-profile img, .main, .contact-links, .line{
     width: 100%;
 }
 
-body, .body-main, .header, .menu, .menu .list,.main, .gig, .contact-links{
+body, .body-main, .header, .menu .list,.main, .gig, .contact-links{
     display: flex;
 }
 
@@ -22,7 +21,7 @@ body, .body-main, .header, .menu, .menu .list,.main, .gig, .contact-links{
     align-items: center;
 }
 
-body, .menu, .contact-links{
+body,  .contact-links{
     justify-content: center;
 }
 
@@ -39,25 +38,29 @@ body, .menu, .contact-links{
 
 /* Header */
 
-.header .title{
-    text-align: center;
-    padding: 0 55px;
-    /* background-color: aliceblue; */
+.title{
+    background-color: #1d4ed8;
 }
 
-/* menu */
-
 .menu{
-    /* background-color: aliceblue; */
-    margin-left: auto;
+    background-color: #1e293b;
+}
+
+.header{
+    flex-direction: row;
+    /* background-color: tomato; */
+    justify-content: space-around;
+    padding: 0 100px;
 }
 
 .menu .list{
-    flex-direction: row;
+    /* background-color: #1e293b; */
     gap: 40px;
+    padding: 0;
 }
 
-.list .item{
+.menu .item{
+    /* background-color: #f8fafc; */
     list-style: none;
     font-size: 20px;
 }
@@ -68,8 +71,8 @@ body, .menu, .contact-links{
     font-weight: bolder;
 }
 
-.link{
-    transition: 0.2s;
+.link{ 
+    transition: 0.5s;
 }
 
 .item .link:hover{
@@ -87,26 +90,29 @@ body, .menu, .contact-links{
 
 .main{
     flex-direction: column;
-    padding: 0 55px;
+    padding: 0 100px;
     box-sizing: border-box;  /*usa toda a largura do container pai*/
 }
 
 .gig{
+    /* background-color: tomato; */
     justify-content: space-around;
     flex-direction: row;
 }
 
 .hello{
+    background-color: tomato;
     text-align: start;
-    width: 100%;
-    max-width: 450px;
+    /* width: 100%; */
+    /* max-width: 450px; */
     /* background-color: aliceblue; */
-    font-size: 60px;
+    font-size: 45px;
 }
 
 .img-profile{
     background-color: cornflowerblue;
-    max-width: 400px;
+    max-width: 300px;
+    min-width: 200px;
     aspect-ratio: 1;       /*Mantem proporção regular de escala 1:1 altura:largura*/
 
 }
@@ -121,13 +127,11 @@ body, .menu, .contact-links{
 
 
 .contact-links{
-    height: 150px;
-    text-align: center;
-    background-color: aliceblue;
+    height: 120px;
 }
 
-.contact-links a, .contact-links img{
-    height: 50px;
-    width: 50px;
+.footer-links a, .footer-links img{
+    max-width: 50px;
+    aspect-ratio: 1;
     border-radius: 50%;
 }
